@@ -16,7 +16,7 @@ extension UIImage {
     }
     
     func blurEffect(_ boxSize: CGFloat) -> UIImage! {
-        return UIImage(cgImage: bluredCGImage(boxSize))
+        return UIImage(cgImage: bluredCGImage(boxSize)) ?? UIImage()
     }
     
     func bluredCGImage(_ boxSize: CGFloat) -> CGImage! {
